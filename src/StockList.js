@@ -9,7 +9,7 @@ class StockList extends Component {
     tabRow() {
         if(this.props.data instanceof Array) {
             return this.props.data.map((object, i) => {
-                return <TableRow obj={object} key={i} />
+                return <TableRow obj={object} key={i} />;
             });
         }
     }
@@ -32,3 +32,5 @@ class StockList extends Component {
         )
     }
 }
+
+export default StockList;

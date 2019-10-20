@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class TableRow extends Component {
     render() {
+        console.log(this.props.obj);
         return(
             <tr>
                 <td>

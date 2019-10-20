@@ -6,9 +6,9 @@ class UserList extends Component {
         super(props);
     }
 
-    tabRow() {
+    tabRow = () => {
         if(this.props.data instanceof Array) {
-            this.props.data.map((object, i) => {
+            this.props.data.map(function(object, i) {
                 return <TableRow obj={object} key={i} />;
             })
         }

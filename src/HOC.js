@@ -5,7 +5,7 @@ export default function Hoc(HocComponent, data) {
         constructor(props) {
             super(props);
             this.state = {
-                data = data
+                data: data
             };
         }
 
