@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Hoc from './HOC';
 
-function App() {
-  return (
-    <div >
-
-    </div>
-  );
+class App extends Component {
+  
+  render() {
+    return (
+      <div>
+        Higher-Order Components
+      </div>
+    )
+  }
 }
 
+App = Hoc(App);
 export default App;
