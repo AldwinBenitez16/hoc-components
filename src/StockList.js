@@ -6,11 +6,12 @@ class StockList extends Component {
         super(props);
     }
 
-    tabRow() {
+    tabRow = () => {
+        let rows = [];
         if(this.props.data instanceof Array) {
-            return this.props.data.map((object, i) => {
-                return <TableRow obj={object} key={i} />;
-            });
+            return this.props.data.map(function(object, i) {
+                return rows.push(<TableRow obj={object} key={i} />);
+            })
         }
     }
 
